@@ -1,0 +1,58 @@
+package quiz3;
+import java.util.ArrayList;
+
+public class School
+{
+
+private String schoolName;
+private ArrayList <Student> students = new ArrayList<Student>();
+private ArrayList <Faculty> faculty = new ArrayList<Faculty>();
+private ArrayList <OfficeStaff> o_staff = new ArrayList<OfficeStaff>();
+private ArrayList <TechnicalSupportStaff> ts_staff = new ArrayList<TechnicalSupportStaff>();
+
+public School(String name)
+{
+	schoolName = name;
+}
+
+public void addPerson(Faculty st)
+{
+	faculty.add(st);
+}
+
+public void addPerson(Student s)
+{
+	students.add(s);
+}
+
+public void addPerson(OfficeStaff os)
+{
+	o_staff.add(os);
+}
+
+public void addPerson (TechnicalSupportStaff ts)
+{
+	ts_staff.add(ts);
+}
+
+public void displaySchoolInfo()
+{
+	System.out.println("\t\t"+ schoolName);
+    System.out.println("\t\t\t =============");
+
+	for(int i=0; i<students.size(); i++)
+	students.get(i).displayInfo();
+	
+	for(int i=0; i<faculty.size(); i++)
+		faculty.get(i).displayInfo();
+
+
+	for(int i=0; i<o_staff.size(); i++)
+	o_staff.get(i).displayInfo();
+
+	for(int i=0; i<ts_staff.size(); i++)
+	ts_staff.get(i).displayInfo();
+
+}
+}
+

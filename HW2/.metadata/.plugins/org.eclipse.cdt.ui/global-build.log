@@ -1,0 +1,56 @@
+20:58:08 **** Incremental Build of configuration Debug for project stack ****
+Info: Internal Builder is used for build
+g++ -o stack.exe "src\\stack.o" 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file stack.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:58:10 **** Incremental Build of configuration Debug for project stack ****
+Info: Internal Builder is used for build
+g++ -o stack.exe "src\\stack.o" 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file stack.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:59:17 **** Incremental Build of configuration Debug for project stack ****
+Info: Internal Builder is used for build
+g++ -o stack.exe "src\\stack.o" 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file stack.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:27:37 **** Rebuild of configuration Debug for project ChuChu ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o hello.o "..\\hello.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o doChuChu.o "..\\doChuChu.cpp" 
+g++ -o ChuChu.exe hello.o doChuChu.o 
+15:27:43 **** Rebuild of configuration Debug for project FirstProj ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\FirstProj.o" "..\\src\\FirstProj.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\selsort.o" "..\\src\\selsort.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\bubblesort.o" "..\\src\\bubblesort.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\binsearch.o" "..\\src\\binsearch.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -o "src\\linsearch.o" "..\\src\\linsearch.cpp" 
+g++ -o FirstProj.exe "src\\selsort.o" "src\\linsearch.o" "src\\bubblesort.o" "src\\binsearch.o" "src\\FirstProj.o" 
+15:27:45 **** Rebuild of configuration Release for project Sort ****
+Info: Internal Builder is used for build
+g++ -O3 -Wall -c -fmessage-length=0 -o bubblesort.o "..\\bubblesort.cpp" 
+g++ -o Sort.exe bubblesort.o 
+15:27:46 **** Incremental Build of configuration Debug for project stack ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\stack.o" "..\\src\\stack.cpp" 
+g++ -o stack.exe "src\\stack.o" 
+12:02:12 **** Rebuild of configuration Debug for project ChuChu ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o doChuChu.o "..\\doChuChu.cpp" 
+Command canceled
+12:24:14 **** Clean-only build of configuration Debug for project ChuChu ****
+rm -rf doChuChu.d hello.d hello.o ChuChu.exe doChuChu.o 
+12:24:15 **** Clean-only build of configuration Debug for project FirstProj ****
+rm -rf src/bubblesort.o FirstProj.exe src/FirstProj.d src/selsort.d src/FirstProj.o src/linsearch.d src/linsearch.o src/selsort.o src/binsearch.d src/binsearch.o src/bubblesort.d 
+12:24:18 **** Clean-only build of configuration Release for project Sort ****
+rm -rf bubblesort.d bubblesort.o Sort.exe 
+12:24:18 **** Clean-only build of configuration Debug for project stack ****
+rm -rf src/stack.d src/stack.o stack.exe 
+12:38:07 **** Clean-only build of configuration Debug for project ChuChu ****
+rm -rf doChuChu.d hello.d hello.o ChuChu.exe doChuChu.o 
+12:38:07 **** Clean-only build of configuration Debug for project FirstProj ****
+rm -rf src/bubblesort.o FirstProj.exe src/FirstProj.d src/selsort.d src/FirstProj.o src/linsearch.d src/linsearch.o src/selsort.o src/binsearch.d src/binsearch.o src/bubblesort.d 
+12:38:07 **** Clean-only build of configuration Release for project Sort ****
+rm -rf bubblesort.d bubblesort.o Sort.exe 
+12:38:07 **** Clean-only build of configuration Debug for project stack ****
+rm -rf src/stack.d src/stack.o stack.exe 

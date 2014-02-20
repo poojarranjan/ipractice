@@ -1,0 +1,43 @@
+package ipractice;
+import java.util.*;
+/*You are given an array of numbers. Find out the array index or position
+where sum of numbers preceding the index is equals to sum of numbers
+succeeding the index.*/
+
+public class first  {
+	
+	
+	public void findMidIndex(int a[]){
+		int n= a.length;
+		int sumbeg=0;
+		int sumend=0;
+		int startindex=0;
+		int endindex=n-1;
+		while(true){
+		 if(sumbeg>sumend){
+			sumend=sumend+ a[endindex--];
+		}
+		
+		else if (sumbeg<sumend){
+			sumbeg=sumbeg+a[startindex++];
+		}
+		else if( sumbeg==sumend)
+		{
+			System.out.println("Mid Index reached\n");
+		}
+	
+	}
+	
+	}
+	
+	public static void main (String args[])
+	{
+		int[] num = { 2, 4, 4, 5,4,1 };
+System.out.println(findMidIndex(num));
+
+	}
+
+	
+    
+}
+	

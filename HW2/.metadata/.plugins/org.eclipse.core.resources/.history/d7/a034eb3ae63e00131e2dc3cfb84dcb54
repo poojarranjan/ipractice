@@ -1,0 +1,27 @@
+package quiz3;
+
+
+public class Staff extends Person {
+	protected boolean hourlyPaid;
+	protected double hourlyRate;
+	protected double monthly_salary;
+	
+	public Staff(String fName, String lName,boolean hp, double ms, double hr)
+	{
+		super(fName,lName);
+		this.hourlyPaid=hp;
+		this.hourlyRate=hr;
+		this.monthly_salary=ms;
+	}
+	
+	@Override
+	public void printInfo()
+	{
+		super.printInfo();
+		if(this.hourlyPaid){
+		System.out.println("Hourly Rate: " +this.hourlyRate);}
+		else {			
+		System.out.println("Monthly Salary: " +this.monthly_salary);
+		}}
+
+}

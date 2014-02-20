@@ -1,0 +1,5 @@
+12:38:07 **** Clean-only build of configuration Release for project Sort ****
+rm -rf bubblesort.d bubblesort.o Sort.exe 
+
+12:38:07 Build Finished (took 103ms)
+

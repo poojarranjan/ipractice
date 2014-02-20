@@ -1,0 +1,21 @@
+package ipractice;
+import java.util.*;
+
+public class first  {
+	
+	private static int j;
+	
+	public static void main (String args[])
+	{
+		j = 0;
+	ArrayList<Integer> a = new ArrayList<Integer>();
+	for(int i=0;i<30;i++){
+		if(a.contains(i))
+		j++;
+		a.add(i);
+	}
+System.out.println("The number of duplicates in the list is "+j);
+	
+    
+}
+	}

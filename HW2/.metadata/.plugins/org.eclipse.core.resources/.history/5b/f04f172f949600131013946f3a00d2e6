@@ -1,0 +1,38 @@
+package ipractice;
+
+import java.util.*;
+
+public class myhashmap {
+	
+	public static void dup(int[] arr)
+	
+	{
+		
+	HashMap< Integer,Integer> set = new HashMap<Integer,Integer>();
+	int p=0;
+ 
+   
+    
+	for (int i = 0; i < arr.length; i++) {
+     
+    	if (set.containsValue(arr[i])){
+    	
+    		;
+    		
+    	}
+    	else{
+        set.put(p,arr[i]);
+        p++;
+        }
+    }
+   
+	}
+
+	
+	public static void main(String args[]){
+		
+		int[]arr={1,2,3,4,4,4,4,5,6,7,2,3,78};
+		dup(arr);
+
+	}
+}

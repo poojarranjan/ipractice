@@ -1,0 +1,27 @@
+package ipractice;
+
+public class longestpalindrome {
+	
+	static void longpali(String s){
+		
+	//	for(int j=0;j<s.length;j++){
+			for(int k=0;k<j;k++){
+	//		if(s==s.reverse()){
+			
+			}
+			}
+	//	}
+		
+		
+		
+		
+	}
+	
+	public static void main(String args[])
+	{
+		String str= new String("Gabbar rocks");
+		longpali(str);
+		
+	}
+
+}

@@ -1,0 +1,63 @@
+package ipractice;
+
+import java.util.Scanner;
+
+class clk{
+
+   public static void main(String args[]){
+       int hours,mins, secs;
+       double hsecDiff=0.0;
+       double secMinDiff=0.0;
+       double mDegrees=0.0;
+       double diff1=0.0;
+
+   System.out.println("Enter the Time(hours) : ");
+       Scanner dx = new Scanner(System.in);
+       hours = dx.nextInt();
+
+   System.out.println("Enter the time(mins) : ");
+       Scanner fx = new Scanner(System.in);
+       mins = fx.nextInt();
+       
+       System.out.println("Enter the time(secs) : ");
+       Scanner px = new Scanner(System.in);
+       secs = px.nextInt();
+
+   if(hours>=0 && hours<=12){
+
+       if(mins>=0 && mins<=59){
+          
+           double hMinDiff = (hours * 30) - (mins * 6);
+       	hsecDiff = (hours*30)-(secs*6);
+           secMinDiff = (mins-secs)*6;
+            mDegrees = mins * 6;
+                   diff1  = Math.abs(hMinDiff);
+      
+               if (diff1 > 180){ 
+
+               diff1 = 360 - diff1;
+      if (hsecDiff>180)
+      {
+   	   hsecDiff = 360- hsecDiff;
+   	   }
+      if (secMinDiff>180)
+      {
+   	   secMinDiff= 360- secMinDiff;
+      }
+      
+      
+               }
+
+       }
+
+       System.out.println(diff1+","+hsecDiff+","+secMinDiff);
+   }
+
+   else{
+       System.out.println("Wrong input ");
+   }
+
+
+}
+
+}

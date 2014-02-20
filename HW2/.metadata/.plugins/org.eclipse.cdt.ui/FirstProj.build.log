@@ -1,0 +1,5 @@
+12:38:07 **** Clean-only build of configuration Debug for project FirstProj ****
+rm -rf src/bubblesort.o FirstProj.exe src/FirstProj.d src/selsort.d src/FirstProj.o src/linsearch.d src/linsearch.o src/selsort.o src/binsearch.d src/binsearch.o src/bubblesort.d 
+
+12:38:07 Build Finished (took 140ms)
+

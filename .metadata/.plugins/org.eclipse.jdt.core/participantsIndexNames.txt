@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\Users\Pooja\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3140478510.index
+\JSPractice\src

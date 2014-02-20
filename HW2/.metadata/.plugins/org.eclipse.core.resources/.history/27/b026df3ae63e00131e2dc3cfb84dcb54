@@ -1,0 +1,24 @@
+package quiz3;
+
+public class Faculty extends Staff {
+	protected String researchArea;
+	protected String department;
+	
+	public Faculty(String fName, String lName, String dep, String res, boolean hp, double ms, double hr)
+	{
+		super(fName, lName, hp,ms,hr);
+		this.department=dep;
+		this.researchArea=res;		
+	}
+	
+	@Override
+	public void printInfo()
+	{
+	  super.printInfo();
+	  System.out.println("Department:" + this.department);
+	  System.out.println("Research Area:" + this.researchArea);
+	  
+	}
+
+}
+

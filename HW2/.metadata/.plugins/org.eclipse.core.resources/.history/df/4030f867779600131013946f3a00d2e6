@@ -1,0 +1,39 @@
+package ipractice;
+
+import java.sql.Array;
+import java.util.*;
+
+public class dupusinghash {
+	
+	public static void dup(int[] arr)
+	
+	{
+		
+	Set<Integer> set = new HashSet<Integer>();
+    int[] result; 
+    result = new int();
+    int counter=0;
+	for (int i = 0; i < arr.length; i++) {
+       // int temp=arr[i];
+    	if (set.contains(arr[i])){
+            //return arr[i];
+    		result[counter]=arr[i];
+    	counter++;}
+    	else{
+        set.add(arr[i]);}
+    }
+    for(int q=0;q<result.length;q++)
+    {
+    	System.out.println(result[q]);
+    }
+	//return 0;
+	}
+
+	
+	public static void main(String args[]){
+		
+		int[]arr={1,2,3,4,4,4,4,5,6,7,2,3,78};
+		dup(arr);
+	//System.out.println(dup(arr));
+	}
+}

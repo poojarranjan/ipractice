@@ -1,0 +1,18 @@
+package quiz3;
+
+public class TechnicalSupportStaff extends Staff {
+	protected String technicalArea;
+	
+	public TechnicalSupportStaff(String fName, String lName, String ta, boolean hp, double ms, double hr)
+	{
+		super(fName,lName, hp,ms,hr);
+		this.technicalArea = ta;
+	}
+	
+	@Override
+	public void printInfo()
+	{
+	      super.printInfo();
+		  System.out.println("Technical Area:" + this.technicalArea);
+	}
+}

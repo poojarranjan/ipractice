@@ -1,0 +1,5 @@
+12:38:07 **** Clean-only build of configuration Debug for project stack ****
+rm -rf src/stack.d src/stack.o stack.exe 
+
+12:38:08 Build Finished (took 87ms)
+
